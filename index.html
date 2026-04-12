@@ -446,48 +446,6 @@
     }
 
     /* ============================================================
-       PARTNER SLIDER
-    ============================================================ */
-    .partner-slider {
-      width: 100%;
-      overflow: hidden;
-      background: #ffffff;
-      border-top: 1px solid var(--color-border);
-      border-bottom: 1px solid var(--color-border);
-      padding: var(--space-2) 0;
-    }
-    .partner-track {
-      display: flex;
-      align-items: center;
-      gap: var(--space-10);
-      width: max-content;
-      animation: scroll-logos 22s linear infinite;
-    }
-    .partner-slider:hover .partner-track {
-      animation-play-state: paused;
-    }
-    .partner-track img {
-      height: 26px;
-      width: auto;
-      object-fit: contain;
-      filter: grayscale(100%);
-      opacity: 0.6;
-      transition: filter var(--transition-base), opacity var(--transition-base);
-      flex-shrink: 0;
-    }
-    .partner-track img:hover {
-      filter: grayscale(0%);
-      opacity: 1;
-    }
-    @keyframes scroll-logos {
-      0%   { transform: translateX(0); }
-      100% { transform: translateX(-50%); }
-    }
-    @media (prefers-reduced-motion: reduce) {
-      .partner-track { animation: none; }
-    }
-
-    /* ============================================================
        TABLET ≥ 600px
     ============================================================ */
     @media (min-width: 600px) {
@@ -632,30 +590,7 @@
         </div>
       </figure>
 
-      <!-- 2. Partner Slider -->
-      <div class="partner-slider" aria-label="Unsere Partner">
-        <div class="partner-track">
-          <img src="http://voss-dachdecker.de/wp-content/uploads/2015/07/fdt.gif"      alt="FDT"       loading="lazy" />
-          <img src="http://voss-dachdecker.de/wp-content/uploads/2015/07/rheinzink.gif" alt="Rheinzink"  loading="lazy" />
-          <img src="http://voss-dachdecker.de/wp-content/uploads/2015/07/braas.gif"     alt="Braas"      loading="lazy" />
-          <img src="http://voss-dachdecker.de/wp-content/uploads/2015/07/alwitra.gif"   alt="Alwitra"    loading="lazy" />
-          <img src="http://voss-dachdecker.de/wp-content/uploads/2015/07/roeben.gif"    alt="Röben"      loading="lazy" />
-          <img src="http://voss-dachdecker.de/wp-content/uploads/2015/07/deg.gif"       alt="DEG"        loading="lazy" />
-          <img src="http://voss-dachdecker.de/wp-content/uploads/2015/07/velux.gif"     alt="Velux"      loading="lazy" />
-          <img src="http://voss-dachdecker.de/wp-content/uploads/2015/07/bauder.gif"    alt="Bauder"     loading="lazy" />
-          <!-- Duplicate for seamless loop -->
-          <img src="http://voss-dachdecker.de/wp-content/uploads/2015/07/fdt.gif"      alt="" aria-hidden="true" loading="lazy" />
-          <img src="http://voss-dachdecker.de/wp-content/uploads/2015/07/rheinzink.gif" alt="" aria-hidden="true" loading="lazy" />
-          <img src="http://voss-dachdecker.de/wp-content/uploads/2015/07/braas.gif"     alt="" aria-hidden="true" loading="lazy" />
-          <img src="http://voss-dachdecker.de/wp-content/uploads/2015/07/alwitra.gif"   alt="" aria-hidden="true" loading="lazy" />
-          <img src="http://voss-dachdecker.de/wp-content/uploads/2015/07/roeben.gif"    alt="" aria-hidden="true" loading="lazy" />
-          <img src="http://voss-dachdecker.de/wp-content/uploads/2015/07/deg.gif"       alt="" aria-hidden="true" loading="lazy" />
-          <img src="http://voss-dachdecker.de/wp-content/uploads/2015/07/velux.gif"     alt="" aria-hidden="true" loading="lazy" />
-          <img src="http://voss-dachdecker.de/wp-content/uploads/2015/07/bauder.gif"    alt="" aria-hidden="true" loading="lazy" />
-        </div>
-      </div>
-
-      <!-- 3. Text Content -->
+      <!-- 2. Text Content -->
       <div class="hero__content">
 
         <div class="badge" aria-label="Das Dach vom Fach">
